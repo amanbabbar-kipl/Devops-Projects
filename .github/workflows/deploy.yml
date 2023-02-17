@@ -1,0 +1,12 @@
+name: Deploy NodeJS app to AWS Beanstalk
+on:
+  push:
+    branches:
+      - "deploy-nodejs-beanstalk"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        run: actions/checkout@v2
